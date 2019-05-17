@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @ConditionalOnWebApplication
-@Import(HelloService.class)
-@EnableConfigurationProperties(HelloProperties.class)
+@Import(value = {HelloService.class,HelloProperties.class})
+//让spring扫描到HelloProperties,不用这个的话，在目标属性类上加上@Configuration或@Component也一样，但要在@Import上加下
+//@EnableConfigurationProperties(HelloProperties.class)
 public class HelloAutoConfiguration {
 }

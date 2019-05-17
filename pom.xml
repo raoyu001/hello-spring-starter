@@ -5,7 +5,7 @@
 
     <groupId>com.github.raoyu001</groupId>
     <artifactId>hello-spring-starter</artifactId>
-    <version>1.0</version>
+    <version>1.3</version>
 
     <packaging>jar</packaging>
 
@@ -103,7 +103,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
+                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
                         <version>1.6.3</version>
                         <extensions>true</extensions>
